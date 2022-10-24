@@ -1,0 +1,76 @@
+% By POSITION (AlohomoraPZX), All rights reserved.
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\title {\zihao{2} \textbf{$\boldsymbol{n}$元不等式100题}}
+\author{整理: \emph{POSITION}}
+\date{ }
+\begin{document}
+    \maketitle
+\section{开始之前}
+    试题的{\LaTeX}源文件和编译的pdf文件和之后的勘误会上传至
+    $$\texttt{https://www.github.com/AlohomoraPZX}$$敬请关注.
+
+\section{不等式}
+   {\fangsong *注:不保证试题难度按升序排序.}
+    \begin{enumerate} % Start to list.
+        % 1
+        \item (2022联赛B) 设$b>a>0,x_1,\cdots,x_{2022} \in [a,b]$,求\ 
+            $$f=\frac{\mid x_1-x_2 \mid + \cdots + \mid x_{2022} - x_1 \mid}{x_1+\cdots+x_{2022}}$$\
+            的最大值.
+        % 2
+        \item (伊朗TST) 给定$n\in\mathbb{N},n\ge2$,求最大的$C_n$,使得$\forall a_i\in\mathbb{R},\sum_{i=1}^n{a_i}=0$,不等式 
+            $$\sum_{1\le i<j\le n}{\mid a_i - a_j \mid}\ge C_n\sum_{i=1}^n{\mid a_i \mid}$$恒成立.
+        % 3
+        \item 设$a_i\in\mathbb{R},\sum_{i=1}^n{a_i^2}=1$,求$$f=\sum_{i=1}^n{\mid a_i - a_{i+1} \mid}$$的最大值.
+        % 4
+        \item 设$a_1,\cdots,a_n>0,n\ge3$,满足$\sum_{1\le i<j \le n}{a_i a_j}=1$,证明:\ 
+            $$\sum_{i=1}^{n}{a_i}\ge\sqrt{\frac{2n}{n-1}}.$$
+        % 5
+        \item (CGMO2005) 给定正整数$n\ge4$. 非负实数$x_1,\cdots,x_n$满足$\sum_{i=1}^n{x_i}=2$,求\
+            $$\sum_{i=1}^n{\frac{x_i}{x_{i+1}^2+1}}$$的最小值.
+        % 6
+        \item (AoPS) 设$x_1,\cdots,x_n\ge0,\sum_{i=1}^n{x_i}=1$,证明:\ 
+            $$\sum_{i=1}^{n}{\frac{x_i^2}{\sum_{j=1}^i{x_j}}}\ge\frac{1}{n}.$$
+        % 7
+        \item 求最大的实数$C$,使得对于任意$0=x_0<x_1<\cdots<x_n=1$,有\ 
+            $$\sum_{k=1}^n{x_k^2\left( x_k - x_{k-1}\right)} > C.$$
+        % 8
+        \item (龚固) 设$a_1,\cdots,a_n\ge0,\sum_{i=1}^n{a_i^2}=1$,求\ 
+            $$f=\prod_{i=1}^n{\left( 1-a_i \right)}$$的最大值.
+        % 9
+        \item (樊畿) 设$a_1,\cdots,a_n>0,\sum_{i=1}^n=1$,证明:\ 
+            $$\prod_{i=1}^n{\left( 1-a_i \right)} \ge {\left( n-1 \right)}^n\prod_{i=1}^n {a_i}.$$
+        % 10
+        \item 设$a_1,\cdots,a_n>0,\sum_{i=1}^n{a_i}=n$,证明:\ 
+            $$\sum_{i=1}^n{a_i^2}+\prod_{i=1}^n{a_i}\ge n+1.$$
+        % 11
+        \item 设$a_1,\cdots,a_n>0$,证明:\ 
+            $$\frac{1}{n}\sum_{i=1}^n{a_i}-\sqrt[n]{\prod_{i=1}^n{a_i}}\le \max_{1\le i<j \le n} \ 
+                {\left( \sqrt{a_i} - \sqrt{a_j} \right)}^2.$$
+            \\ 注: \emph {本质上本题给出了$n$元均值不等式中算术平均值与几何平均值之间距离的上界.}
+        % 12
+        \item (Hilbert) 设$a_1,\cdots,a_n>0$,证明:\ 
+            $$\sum_{i=1}^n\frac{n}{\sum_{j=1}^{i}{a_i}}<\sum_{i=1}^n{\frac{2}{a_i}}.$$
+        % 13
+        \item (罗马尼亚TST) 设$n\ge4,a_1,\cdots,a_n>0,\sum_{i=1}^n{a_i^2}=1$,证明:\ 
+            $$\sum_{i=1}^n{\frac{a_i}{a_{i+1}^2+1}}\ge\frac{4}{5}\ 
+            {\left( \sum_{i=1}^n{a_i \sqrt{a_i}}\right)}^2.$$
+        % 14
+        \item 设$x_1,\cdots,x_n>0,\sum_{i=1}^n{x_i^2}=n$,证明: \ 
+            $$\frac{1}{2}\sum_{i=1}^n{\left( x_i+\frac{1}{x_i} \right)}\ge \ 
+                n-1+\frac{n}{\sum_{i=1}^{n}{x_i}}.$$
+        % 15
+        \item 设$a_1,\cdots,a_n,b_1,\cdots,b_n>0$,证明:\ 
+            $$\sum_{k=1}^n{\frac{a_k}{\sum_{j \ne k}{a_j b_j}}}\ge\frac{4}{\sum_{i=1}^n{b_i}}.$$
+        % 16
+        \item (西班牙2011) 设$n\ge3,a_1,\cdots,a_n>0,S=\sum_{i=1}^n{a_i}$,证明: \ 
+            $${\sum_{i = 1}^{n}\left\lbrack {\frac{a_{i}}{S - a_{i}} + \sqrt{\left( \frac{\left( {n - 1} \right)a_{i}}{S - a_{i}} \
+             \right)^{n - 2}}} \right\rbrack} \geq \frac{n^{2}}{n - 1}.$$
+        \item 
+    \end{enumerate}
+\end{document}
