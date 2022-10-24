@@ -12,8 +12,8 @@
 \begin{document}
     \maketitle
 \section{开始之前}
-    试题的{\LaTeX}源文件和编译的pdf文件和之后的勘误会上传至
-    $$\texttt{https://www.github.com/AlohomoraPZX}$$敬请关注.
+    试题的{\LaTeX}源文件和编译的PDF文件和之后的勘误会上传至
+    $$\texttt{https://github.com/AlohomoraPZX/100Inequalities}$$敬请关注.
 
 \section{不等式}
    {\fangsong *注:不保证试题难度按升序排序.}
@@ -54,7 +54,7 @@
                 {\left( \sqrt{a_i} - \sqrt{a_j} \right)}^2.$$
             \\ 注: \emph {本质上本题给出了$n$元均值不等式中算术平均值与几何平均值之间距离的上界.}
         % 12
-        \item (Hilbert) 设$a_1,\cdots,a_n>0$,证明:\ 
+        \item (Hardy) 设$a_1,\cdots,a_n>0$,证明:\ 
             $$\sum_{i=1}^n\frac{n}{\sum_{j=1}^{i}{a_i}}<\sum_{i=1}^n{\frac{2}{a_i}}.$$
         % 13
         \item (罗马尼亚TST) 设$n\ge4,a_1,\cdots,a_n>0,\sum_{i=1}^n{a_i^2}=1$,证明:\ 
@@ -65,12 +65,77 @@
             $$\frac{1}{2}\sum_{i=1}^n{\left( x_i+\frac{1}{x_i} \right)}\ge \ 
                 n-1+\frac{n}{\sum_{i=1}^{n}{x_i}}.$$
         % 15
-        \item 设$a_1,\cdots,a_n,b_1,\cdots,b_n>0$,证明:\ 
+        \item (龚固) 设$a_1,\cdots,a_n,b_1,\cdots,b_n>0$,证明:\ 
             $$\sum_{k=1}^n{\frac{a_k}{\sum_{j \ne k}{a_j b_j}}}\ge\frac{4}{\sum_{i=1}^n{b_i}}.$$
         % 16
         \item (西班牙2011) 设$n\ge3,a_1,\cdots,a_n>0,S=\sum_{i=1}^n{a_i}$,证明: \ 
             $${\sum_{i = 1}^{n}\left\lbrack {\frac{a_{i}}{S - a_{i}} + \sqrt{\left( \frac{\left( {n - 1} \right)a_{i}}{S - a_{i}} \
              \right)^{n - 2}}} \right\rbrack} \geq \frac{n^{2}}{n - 1}.$$
-        \item 
+        % 17
+        \item 设$n\ge3,a_1,\cdots,a_n\in\mathbb{R},S=\sum_{i=1}^n{a_i^2}$,证明: \ 
+            $${\left( \sum_{i=1}^n{a_i} \right)}^2\cdot\sum_{i=1}^n{\frac{1}{S+a_i^2}}\leq\frac{n^3}{n+1}.$$
+        % 18
+        \item (XMO2019) 设$n\ge2,z_1,\cdots,z_n\in\mathbb{C}$,证明: \ 
+            $${\left( \sum_{1\le i<j \le n}{\mid z_i - z_j \mid}\right)}^2\geq(n-1)\sum_{1\le i<j \le n}{{\mid z_i - z_j \mid}^2}.$$
+        % 19
+        \item (CTST2011) 给定正整数$n\ge3$,求最大的实数$M$,使得对于任意正实数数列$x_1,\cdots,x_n$,\
+            都存在其的一个排列$y_1,\cdots,y_n$,满足\ 
+            $$\sum_{i=1}^n{\frac{y_i^2}{y_{i+1}^2-y_{i+1}y_{i+2}+y_{i+2}^2}}\geq M.$$
+            式中下标按模$n$意义理解.
+        % 20
+        \item (希望联盟2022) 设$a_1,\cdots,a_n\ge0,\sum_{i=1}^n{a_i}=4$,求\ 
+            $$S=a_1+a_1a_2+\cdots+a_1\cdots a_n=\sum_{i=1}^n{\prod_{j=1}^i{a_j}}$$的最大值.
+        % 21
+        \item (ZMO2022) 求最大的正实数$c$,使得对于任意$n$个正实数$x_1,\cdots,x_n$,均有\
+            $$(2n-3)\sum_{i=1}^n{\frac{1}{x_i}}+\frac{n^2}{\sum_{i=1}^n{x_i}}\geq c\sum_{1\le i<j \le n}{\frac{1}{1+x_ix_j}}.$$
+        % 22
+        \item 给定正整数$n\ge4$,设实数$x_1,\cdots,x_n\in[0,1]$,求\ 
+            $$\sum_{i=1}^n{x_i\mid x_i - x_{i+1} \mid}$$的最大值,下标按模$n$意义理解.
+        % 23
+        \item (凌禹T26) 非负实数$x_1,\cdots,x_n$满足$\sum_{i=1}^n{x_i}=1$. 证明:\ 
+            存在$x_1,\cdots,x_n$的一个排列$a_1,\cdots,a_n$,使得$$\sum_{i=1}^n{a_ia_{i+1}}\leq\frac{1}{n}.$$下标按模$n$意义理解.
+        % 24
+        \item (王永喜) 设$z_1,\cdots,z_n\in\mathbb{C}$,且$\forall i \neq j, z_i\neq z_j, \mid z_i \mid = \mid z_j \mid$,证明: \ 
+            $$\sum_{1\le i<j \le n} {{\left| \frac{z_i+z_j}{z_i-z_j} \right|}^2}\geq\frac{(n-1)(n-2)}{2}.$$
+        % 25
+        \item (王永喜) 给定正整数$n>k>1$,试找出使得$\forall x_1,\cdots,x_n\in\mathbb{R}$,不等式\ 
+            $$\sum_{1\le i<j \le n}{{\left( x_i-x_j \right)}^2}\geq T(n,k)\sum_{1 \le i<j \le k}{{\left( x_i-x_j \right)}^2}$$ \ 
+            成立的最佳系数$T(n,k)$.
+        % 26
+        \item (CTST,凌禹T7) 设$n\geq2,a_1,\cdots,a_n>0$满足$\sum_{i=1}^n{a_i}=1$. 证明: \ 
+            $${\left( \sum_{i=1}^n{\sqrt{a_i}} \right)}{\left( \sum_{i=1}^n{\frac{1}{\sqrt{1+a_i}}} \right)}\leq\frac{n^2}{\sqrt{n+1}}.$$
+        % 27
+        \item (凌禹T11) 设$n\geq2,a_1,\cdots,a_n\in\mathbb{R},\sum_{i=1}^n{a_i}=0$. 证明: \ 
+            $$\max_{1\le i \le n}{a_i^2}\leq\frac{n}{3}\sum_{i=1}^{n-1}{(a_{i+1}-a_i)^2}.$$
+        % 28
+        \item (凌禹T15) 设$n\geq2,a_1,\cdots,a_n>0,\sum_{i=1}^n{a_n}=1$. 证明: \ 
+            $${\left( \sum_{i=1}^n{a_ia_{i+1}} \right)}{\left( \sum_{i=1}^n{\frac{a_i}{a_{i+1}^2+a_{i+1}}}\right)}\geq\frac{n}{n+1}.$$
+        % 29
+        \item (DCMO2) 设$n\geq3,x_1,\cdots,x_n>0,S=\sum_{i=1}^n{x_i}$,且$\min_{1\le i \le n}{x_i}\geq S-2$. 求\ 
+            $$f=\sum_{i=1}^n{\frac{x_i^{S-x_i}}{(S-x_i)^2}}$$的最小值.
+        % 30
+        \item (DCMO3) 设$a_1,\cdots,a_n>0$满足$\min_{1\le i<j \le n}a_ia_j\geq k^2 (n,k\in\mathbb{Z}_{+})$,证明:\ 
+            $$\prod_{i=1}^n{\left( a_i^2 + k^2 \right)}\leq{\left[ {\left( \frac{1}{n}\sum_{i=1}^n{a_i} \right)}^2 + k^2 \right]}^n.$$
+        % 31
+        \item (CMO2016) 设$n\geq2,b>a>0,x_1,\cdots,x_n\in[a,b]$,求\ 
+            $$S=\frac{\frac{x_1^2}{x_2}+\cdots+\frac{x_n^2}{x_1}}{x_1+\cdots+x_n}$$的最值.
+        % 32
+        \item (CTST1995) 对于$n\in\mathbb{N}$,求最小的正实数$\lambda$,使得对于任意实数$b_1,\cdots,b_n$是$a_1,\cdots,a_n\in[1,2]$的排列,\
+            就有$$\sum_{i=1}^n{\frac{a_i^3}{b_i}}\leq\lambda\sum_{i=1}^n{a_i^2}.$$
+        % 33
+        \item (CMO2017) 给定$n,k\in\mathbb{N}_{+}(n>k),a_1,\cdots,a_n\in(k-1,k)$,若正实数$x_1,\cdots,x_n$满足:\ 
+            对任意集合$I\subseteq\{ 1,2,\cdots,n \},\mid I \mid=k$,有$$\sum_{i\in I}{x_i}\leq\sum_{i\in I}{a_i},$$\ 
+            求$\prod_{i=1}^n{x_i}$的最大值.
+        % 34
+        \item 已知$x_i>0,\sum_{i=1}^n{x_i}=1$,证明:$\forall r>0$,有
+            $$\prod_{i=1}^n(1+rx_i)\geq(n+r)^n\prod_{i=1}^n{x_i}.$$
+        % 35
+        \item (不等式吧10006) 试求常数$\lambda$的最小值,使得对一切正整数$n$及任意和为1的正实数$x_k(1\le k \le n)$,有\ 
+            $$\lambda\prod_{i=1}^n{(1-x_k)}\geq 1-\sum_{i=1}^n{x_k^2}.$$
+        % 36
+        \item (CWMO6) 设$n\ge2,a_1\ge a_2\ge\cdots\ge a_n>0$. 证明:\
+            $$\sum_{i=1}^n{\frac{a_i}{a_{i+1}}}\leq n+\frac{1}{2a_1a_n}\sum_{i=1}^n{\left( a_i - a_{i+1} \right)}^2.$$
+        % 37
+        \item \texttt{To be continued...}
     \end{enumerate}
 \end{document}
